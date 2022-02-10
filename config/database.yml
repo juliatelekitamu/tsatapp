@@ -81,6 +81,9 @@ test:
 #
 production:
   <<: *default
-  database: tsatapp_production
-  username: tsatapp
-  password: <%= ENV['TSATAPP_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+
+
+#  database: tsatapp_production
+#  username: tsatapp
+#  password: <%= ENV['TSATAPP_DATABASE_PASSWORD'] %>
